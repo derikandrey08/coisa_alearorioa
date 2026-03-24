@@ -1,0 +1,246 @@
+/* Gerais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(21, 35, 82);
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: "Fira Sans";
+    height: 3050px; 
+}
+
+
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeOut 1s forwards 3s;
+}
+
+.logo {
+    height: 200px; 
+    animation: fadeIn 1s ease-in;
+}
+
+/* Animações CSS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+/*Cabeçalho*/
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 70px;
+}
+
+#flflogoofc {
+    height: 60px;
+}
+
+/* Botão de acessar o site! */
+
+.botaoentre {
+    width: 300px;
+    height: 70px;
+    color:white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+    font-family: "Fira Sans";
+    background-color:#2338D5;
+    text-decoration: none;
+}
+
+.botaoentre:hover {
+    background-color: white;
+    color: rgb(14, 25, 61);
+    transition: 0.7s;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Tela Principal */
+
+section{
+    display: flex;
+}
+
+.intro {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8)),
+                        url("IMG/outrainstuitcap.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 10px;
+    height: 1000px;
+}
+
+.botaoentre1 {
+    width: 300px;
+    height: 70px;
+    color:#2338D5;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+    background-color:#ffffff;
+    text-decoration: none;
+    font-family: "Fira Sans";
+    border-color: #2338D5;
+}
+
+.botaoentre1:hover {
+    background-color: #2338D5;
+    color: white;
+    transition: 0.7s;
+}
+
+.intro h2 {
+    color: #ffffff;
+    font-size: 70px;
+}
+
+.intro h3 {
+    color: white;
+    font-size: 40px;
+}
+
+.fotosvideos {
+    height: 800px;
+    background-color: #383A50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-top: 5px solid #58b6db;
+    gap:10px;
+}
+
+#textobutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    gap:10px;
+    padding:20px;
+}
+
+.fotosvideos h2 {
+    font-size: 70px;
+    color: white;
+    text-align: left;
+}
+
+.botaoentre2 {
+    width: 300px;
+    height: 70px;
+    color:white;
+    font-size: 30px;
+    font-style: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+    background-color:#293CCF;
+    text-decoration: none;
+    font-family: "Fira Sans";
+    border: 2px 2px 2px 2px solid #2338D5;
+}
+
+.botaoentre2:hover {
+    background-color: #ffffff;
+    color:#17237e;
+    transition: 0.7s;
+}
+
+#prediofacul {
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+.fotosvideos h4 {
+    font-size: 20px;
+    color: white;
+}
+
+.entradacursos {
+    border-top: 5px solid #58b6db;
+    background-color: #ffffff;
+    height: 1000px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.entradacursos h2{
+    color:#1f1f8e;
+    font-size: 65px;
+}
+
+.entradacursos h4 {
+    font-size: 30px;
+    color: #000000;
+}
+
+.entradacursos img{
+    height: 600px;
+}
+
+
+
+/*Rodapé*/
+
+footer {
+    height: 100px;
+    background-color: rgb(23, 22, 93);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    color: white;
+    font-size: 20px;
+}

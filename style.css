@@ -1,0 +1,215 @@
+/*Gerais*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(21, 35, 82);
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 10px;
+    font-family: "Fira Sans";
+}
+
+/*fim do geral*/
+
+
+/*Cabeçalho*/
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 70px;
+}
+
+#flflogoofc {
+    height: 60px;
+}
+
+.botaoentre {
+    width: 300px;
+    height: 70px;
+    color:white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+    font-family: "Fira Sans";
+    background-color:#2338D5;
+    text-decoration: none;
+}
+
+.botaoentre:hover {
+    background-color: white;
+    color: rgb(14, 25, 61);
+    transition: 0.7s;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Fim do cabeçalho*/
+
+
+/*Principal (Imagens)*/
+
+#mainimagens {
+    height: 2600px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+
+.introimg {
+    background-image: linear-gradient(to left, #3c87ff, #1f1f8e);
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid #58b6db;
+}
+
+.introimg h2 {
+    color: white;
+    font-size: 60px;
+}
+
+.introimg h4{
+    color: white;
+    font-size: 30px;
+}
+
+.imgsmassas {
+    height: 2100px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.container-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.img-plus-legenda {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*Principal (Cursos)*/
+
+#maincursos {
+    height: 1980px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+
+.introcursos {
+    background-image: linear-gradient(to bottom, #2ed3f8, #121555);
+    height: 700px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #58b6db;
+}
+
+.introcursos img {
+    border: 5px solid #ffffff;
+}
+
+.cursos {
+    height: 1200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+.cursos h4 {
+    font-style: normal;
+    color: #1a59bf;
+}
+
+.cursos hr {
+    border: 1px solid #70a7ff;
+}
+
+/*Organização dos (Cursos)*/
+
+.cursinho{
+    width: 100%;
+    height:200px;
+    border: 2px solid #3c87ff;
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s ease; /* Efeito de zoom */
+    object-fit: cover; /* Garante que a imagem não fique distorcida */
+}
+
+.linhacurso3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.malha {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+
+
+/*Rodapé*/
+
+footer {
+    height: 100px;
+    background-color: rgb(23, 22, 93);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    color: white;
+    font-size: 20px;
+}
